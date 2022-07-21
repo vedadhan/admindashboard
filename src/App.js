@@ -11,9 +11,16 @@ import SinglePage from './pages/single/SinglePage';
 import NewPage from "./pages/new/NewPage";
 import { userInputs, productInputs } from './formSource';
 
+import './styles/dark.scss';
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
+
 function App() {
+
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="App">
+    <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
           <Route path="/">

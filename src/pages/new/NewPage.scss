@@ -12,10 +12,21 @@
             padding: 10px;
             margin: 20px;
             display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             h1 {
                 color: lightgray;
                 font-size: 20px;
+            }
+
+            .topBack {
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 5px;
+                cursor: pointer;
+                color: rgb(178, 178, 247);
+                border: 1px solid gray;
             }
 
             .left {

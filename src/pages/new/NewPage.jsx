@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import './NewPage.scss';
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';
+import { Link } from 'react-router-dom';
 
 function NewPage({ title, inputs }) {
 
@@ -17,6 +18,9 @@ function NewPage({ title, inputs }) {
                 <Navbar />
                 <div className='top'>
                     <h1>{title}</h1>
+                    <Link to='/users' style={{ textDecoration: 'none' }}>
+                        <h1 className='topBack'>Back</h1>
+                    </Link>
                 </div>
                 <div className='bottom'>
                     <div className='left'>
